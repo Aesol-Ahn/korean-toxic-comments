@@ -1,0 +1,53 @@
+mecab_RNN_single
+
+Confusion matrix
+[[17489  1061]
+ [  893 16678]]
+
+f1 :  0.9458714044139606
+recall :  0.9459333599331538
+precision :  0.9458217424309956
+accuracy 0.9459040447385177
+
+
+
+
+
+
+Epoch 1/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.2167 - acc: 0.9119
+Epoch 00001: val_acc improved from -inf to 0.92666, saving model to mecab_RNN_single.h5
+2000/2000 [==============================] - 60s 30ms/step - loss: 0.2167 - acc: 0.9119 - val_loss: 0.1875 - val_acc: 0.9267
+Epoch 2/15
+2000/2000 [==============================] - ETA: 0s - loss: 0.1607 - acc: 0.9403
+Epoch 00002: val_acc improved from 0.92666 to 0.93416, saving model to mecab_RNN_single.h5
+2000/2000 [==============================] - 59s 30ms/step - loss: 0.1607 - acc: 0.9403 - val_loss: 0.1607 - val_acc: 0.9342
+Epoch 3/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1522 - acc: 0.9432
+Epoch 00003: val_acc improved from 0.93416 to 0.94066, saving model to mecab_RNN_single.h5
+2000/2000 [==============================] - 59s 30ms/step - loss: 0.1522 - acc: 0.9431 - val_loss: 0.1599 - val_acc: 0.9407
+Epoch 4/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1354 - acc: 0.9493
+Epoch 00004: val_acc improved from 0.94066 to 0.94276, saving model to mecab_RNN_single.h5
+2000/2000 [==============================] - 59s 30ms/step - loss: 0.1355 - acc: 0.9492 - val_loss: 0.1464 - val_acc: 0.9428
+Epoch 5/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1341 - acc: 0.9495
+Epoch 00005: val_acc improved from 0.94276 to 0.94516, saving model to mecab_RNN_single.h5
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.1340 - acc: 0.9495 - val_loss: 0.1435 - val_acc: 0.9452
+Epoch 6/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1181 - acc: 0.9570
+Epoch 00006: val_acc did not improve from 0.94516
+2000/2000 [==============================] - 59s 29ms/step - loss: 0.1181 - acc: 0.9570 - val_loss: 0.1498 - val_acc: 0.9433
+Epoch 7/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1282 - acc: 0.9530
+Epoch 00007: val_acc did not improve from 0.94516
+2000/2000 [==============================] - 61s 30ms/step - loss: 0.1282 - acc: 0.9530 - val_loss: 0.1488 - val_acc: 0.9425
+Epoch 8/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1106 - acc: 0.9596
+Epoch 00008: val_acc did not improve from 0.94516
+2000/2000 [==============================] - 61s 31ms/step - loss: 0.1106 - acc: 0.9596 - val_loss: 0.1542 - val_acc: 0.9427
+Epoch 9/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1224 - acc: 0.9548
+Epoch 00009: val_acc did not improve from 0.94516
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.1223 - acc: 0.9548 - val_loss: 0.1538 - val_acc: 0.9443
+Epoch 00009: early stopping

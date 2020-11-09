@@ -1,0 +1,56 @@
+khaiii_CNN1D
+
+Confusion matrix
+[[17236  1314]
+ [ 1104 16467]]
+
+f1 :  0.9201271666298482
+recall :  0.9203073046266967
+precision :  0.9200561565969003
+accuracy 0.9201572492455912
+
+
+# Basic CNN using 1D convolution and pooling(Known as "temperal convoulution")
+model = Sequential()
+model.add(Embedding(input_dim = num_features ,
+                    output_dim = embedding_dimension, 
+                    input_length = max_len))
+model.add(Conv1D(filters = 50, kernel_size = 5, strides = 1, padding = 'valid'))
+model.add(MaxPooling1D(2, padding = 'valid'))
+model.add(Flatten())
+model.add(Dense(10,activation = 'relu'))
+model.add(Dense(1,activation = 'sigmoid'))
+
+
+
+
+
+Epoch 1/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.2151 - acc: 0.9084
+Epoch 00001: val_acc improved from -inf to 0.92806, saving model to khaiii_CNN1D_.h5
+2000/2000 [==============================] - 68s 34ms/step - loss: 0.2151 - acc: 0.9084 - val_loss: 0.1803 - val_acc: 0.9281
+Epoch 2/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1624 - acc: 0.9347
+Epoch 00002: val_acc improved from 0.92806 to 0.93066, saving model to khaiii_CNN1D_.h5
+2000/2000 [==============================] - 64s 32ms/step - loss: 0.1624 - acc: 0.9347 - val_loss: 0.1750 - val_acc: 0.9307
+Epoch 3/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1478 - acc: 0.9417
+Epoch 00003: val_acc improved from 0.93066 to 0.93170, saving model to khaiii_CNN1D_.h5
+2000/2000 [==============================] - 65s 33ms/step - loss: 0.1478 - acc: 0.9417 - val_loss: 0.1709 - val_acc: 0.9317
+Epoch 4/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1327 - acc: 0.9486
+Epoch 00004: val_acc did not improve from 0.93170
+2000/2000 [==============================] - 64s 32ms/step - loss: 0.1327 - acc: 0.9486 - val_loss: 0.1815 - val_acc: 0.9272
+Epoch 5/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.1167 - acc: 0.9551
+Epoch 00005: val_acc did not improve from 0.93170
+2000/2000 [==============================] - 65s 33ms/step - loss: 0.1167 - acc: 0.9551 - val_loss: 0.1923 - val_acc: 0.9248
+Epoch 6/15
+2000/2000 [==============================] - ETA: 0s - loss: 0.1013 - acc: 0.9614
+Epoch 00006: val_acc did not improve from 0.93170
+2000/2000 [==============================] - 72s 36ms/step - loss: 0.1013 - acc: 0.9614 - val_loss: 0.2086 - val_acc: 0.9241
+Epoch 7/15
+1999/2000 [============================>.] - ETA: 0s - loss: 0.0885 - acc: 0.9669
+Epoch 00007: val_acc did not improve from 0.93170
+2000/2000 [==============================] - 67s 33ms/step - loss: 0.0885 - acc: 0.9669 - val_loss: 0.2339 - val_acc: 0.9203
+Epoch 00007: early stopping
